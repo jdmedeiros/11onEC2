@@ -21,12 +21,12 @@ http://peterforgacs.github.io/2017/04/14/How-to-create-and-run-a-custom-Windows-
 Create an S3 bucket
 The bucketname must be unique.
 ```
-aws s3 mb s3://my-unique-bucket --region eu-central-1
+aws s3 mb s3://my-unique-bucket --region us-east-1
 ```
 Upload image to s3
 Move to the folder you store the virtual machine file and upload the virtual image to the s3 bucket.
 ```
-aws s3 cp myimage.ova s3://my-unique-bucket --region eu-central-1
+aws s3 cp myimage.ova s3://my-unique-bucket --region us-east-1
 ```
 Configuration files
 Create a trust policy in the file trust-policy.json.
@@ -98,10 +98,10 @@ Replace my-unique-bucket and myimage.ova with your bucket and image name.
 [{ "Description": "Windows 11 Base Install", "Format": "ova", "UserBucket": { "S3Bucket": "my-unique-bucket", "S3Key": "myimage.ova" } }]
 Create EC2 AMI from S3 OVA image
 ```
-aws ec2 import-image --description "Windows 11" --disk-containers file://containers.json --region eu-central-1
+aws ec2 import-image --description "Windows 11" --disk-containers file://containers.json --region us-east-1
 ```
 This may take a while you can check on the status of the import.
 ```
-aws ec2 describe-import-image-tasks --region eu-central-1
+aws ec2 describe-import-image-tasks --region us-east-1
 ```
 When the import status is completed you can head to the EC2 console and select the correct region.
