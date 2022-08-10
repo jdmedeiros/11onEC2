@@ -26,7 +26,7 @@ aws s3 mb s3://my-unique-bucket --region eu-central-1
 Upload image to s3
 Move to the folder you store the virtual machine file and upload the virtual image to the s3 bucket.
 ```
-aws s3 cp myimage.vhd s3://my-unique-bucket --region eu-central-1
+aws s3 cp myimage.ova s3://my-unique-bucket --region eu-central-1
 ```
 Configuration files
 Create a trust policy in the file trust-policy.json.
@@ -95,8 +95,8 @@ aws iam put-role-policy --role-name vmimport --policy-name vmimport --policy-doc
 Create a configuration file on your computer called containers.json.
 Replace my-unique-bucket and myimage.vhd with your bucket and image name.
 
-[{ "Description": "Windows 11 Base Install", "Format": "vhd", "UserBucket": { "S3Bucket": "my-unique-bucket", "S3Key": "myimage.vhd" } }]
-Create EC2 AMI from S3 VHD image
+[{ "Description": "Windows 11 Base Install", "Format": "ova", "UserBucket": { "S3Bucket": "my-unique-bucket", "S3Key": "myimage.ova" } }]
+Create EC2 AMI from S3 OVA image
 ```
 aws ec2 import-image --description "Windows 11" --disk-containers file://containers.json --region eu-central-1
 ```
