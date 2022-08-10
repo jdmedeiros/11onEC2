@@ -16,4 +16,4 @@ making sure the value for each of those fields is 1. Some of those values may be
 
 When the system boots, proceed normally to complete the installation choosing "Set up for personal use" and "offline account". The other options you may choose as you like.
 
-Update the system. When done, shut it down and export the VM to a single file .ova
+Update the system. When done, shut it down and export the VM to a single **.ova** file.
