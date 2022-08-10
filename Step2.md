@@ -93,7 +93,7 @@ Add the policy to the vmimport role.
 aws iam put-role-policy --role-name vmimport --policy-name vmimport --policy-document file://role-policy.json
 ```
 Create a configuration file on your computer called containers.json.
-Replace my-unique-bucket and myimage.vhd with your bucket and image name.
+Replace my-unique-bucket and myimage.ova with your bucket and image name.
 
 [{ "Description": "Windows 11 Base Install", "Format": "ova", "UserBucket": { "S3Bucket": "my-unique-bucket", "S3Key": "myimage.ova" } }]
 Create EC2 AMI from S3 OVA image
