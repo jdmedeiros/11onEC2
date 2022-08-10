@@ -29,7 +29,7 @@ Move to the folder you store the virtual machine file and upload the virtual ima
 aws s3 cp myimage.ova s3://my-unique-bucket --region us-east-1
 ```
 Configuration files
-Create a trust policy in the file trust-policy.json.
+Create a trust policy in the file **trust-policy.json**.
 ```
 {
    "Version": "2012-10-17",
@@ -47,11 +47,11 @@ Create a trust policy in the file trust-policy.json.
    ]
 }
 ```
-Create a vmimport role and add vim import/export access to it.
+Create a vmimport role and add vimimport/export access to it.
 ```
 aws iam create-role --role-name vmimport --assume-role-policy-document file://trust-policy.json
 ```
-Create a file named role-policy.json replace the !!REPLACEME!! to the bucketname you are using.
+Create a file named **role-policy.json** replace the !!REPLACEME!! to the bucketname you are using.
 ```
 {
    "Version": "2012-10-17",
@@ -92,7 +92,7 @@ Add the policy to the vmimport role.
 ```
 aws iam put-role-policy --role-name vmimport --policy-name vmimport --policy-document file://role-policy.json
 ```
-Create a configuration file on your computer called containers.json.
+Create a configuration file on your computer called **containers.json**.
 Replace my-unique-bucket and myimage.ova with your bucket and image name.
 
 [{ "Description": "Windows 11 Base Install", "Format": "ova", "UserBucket": { "S3Bucket": "my-unique-bucket", "S3Key": "myimage.ova" } }]
