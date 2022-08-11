@@ -109,4 +109,4 @@ When the import status is completed you can create an instance based on that AMI
 The t3.nano instance type does not support an AMI with TPM version v2.0. Specify an instance type that supports TPM version v2.0, and try again.
 ```
 
-if you select an instance that does not support TPM version v2.0 The lowest priced instances that I found that support TPM version v2.0 are C5 instances.
+if you select an instance type that does not support TPM version v2.0 The lowest priced instances that I found that support TPM version v2.0 are C5 instances.
