@@ -27,7 +27,6 @@ Upload the **.ova** or **.vhd** image to the s3 bucket.
 ```
 aws s3 cp myimage.ova s3://my-unique-bucket --region us-east-1
 ```
-Configuration files
 Create a trust policy in the file **trust-policy.json**.
 ```
 {
