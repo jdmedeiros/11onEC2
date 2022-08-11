@@ -104,4 +104,9 @@ This may take a while you can check on the status of the import.
 ```
 aws ec2 describe-import-image-tasks --region us-east-1
 ```
-When the import status is completed you can head to the EC2 console and select the correct region.
+When the import status is completed you can create an instance based on that AMI. However you will get a message like:
+
+
+The t3.nano instance type does not support an AMI with TPM version v2.0. Specify an instance type that supports TPM version v2.0, and try again.
+
+if you select an instance that does not support TPM version v2.0 The lowest priced instances that I found that support TPM version v2.0 are C5 instances.
