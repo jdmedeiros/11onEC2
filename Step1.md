@@ -7,7 +7,7 @@ Create a new virtual machine with VMware Workstation/Fusion or Virtualbox; I am 
 Start the virtual machine; make sure you select Windows 11 PRO. If you get the **"This PC can't run Windows 11"** message, click on the top right red X to quit. Select the **"Repair your computer"** option. Click on **Troubleshoot**, **Command Prompt** and run **regedit**. 
 
 
-While in  **regedit** select HKEY_LOCAL_MACHINE, SYSTEM, Setup and create a new key with the name **LabConfig** [no you may not use another name for the key]. Inside the **LabConfig** create 3 new DWORD (32 bit) value fields with the following names: 
+While in  **regedit** select _HKEY_LOCAL_MACHINE_, _SYSTEM_, _Setup_ and create a new key with the name **LabConfig** [no you may not use another name for the key]. Inside the **LabConfig** create 3 new DWORD (32 bit) value fields with the following names: 
 - **BypassTPMCheck**
 - **BypassRAMCheck**
 - **BypassSecureBootCheck**
