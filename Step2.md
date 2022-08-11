@@ -23,8 +23,7 @@ The bucketname must be unique.
 ```
 aws s3 mb s3://my-unique-bucket --region us-east-1
 ```
-Upload image to s3
-Move to the folder you store the virtual machine file and upload the virtual image to the s3 bucket.
+Upload the **.ova** or **.vhd** image to the s3 bucket.
 ```
 aws s3 cp myimage.ova s3://my-unique-bucket --region us-east-1
 ```
