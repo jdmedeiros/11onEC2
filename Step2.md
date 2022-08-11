@@ -15,7 +15,7 @@ Create a Linux instance in AWS and make sure the IAM role associated with the in
 ```
 
 Get the other relevants parts from here:
-http://peterforgacs.github.io/2017/04/14/How-to-create-and-run-a-custom-Windows-10-virtual-machine-on-Amazon-AWS-EC2/
+http://peterforgacs.github.io/2017/04/14/How-to-create-and-run-a-custom-Windows-10-virtual-machine-on-Amazon-AWS-EC2/ but in summary they are:
 
 
 Create an S3 bucket
