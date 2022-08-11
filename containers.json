@@ -1,0 +1,1 @@
+[{ "Description": "Windows 11 Base Install", "Format": "ova", "UserBucket": { "S3Bucket": "my-unique-bucket", "S3Key": "myimage.ova" } }]
