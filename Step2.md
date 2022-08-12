@@ -104,8 +104,6 @@ aws ec2 describe-import-image-tasks --region us-east-1
 ```
 When the import status is completed you can create an instance based on that AMI. However you will get a message like:
 
-```
-The t3.nano instance type does not support an AMI with TPM version v2.0. Specify an instance type that supports TPM version v2.0, and try again.
-```
+ <span style="color: red">*The t3.nano instance type does not support an AMI with TPM version v2.0. Specify an instance type that supports TPM version v2.0, and try again.*</span>
 
 if you select an instance type that does not support TPM version v2.0 The lowest priced [instances that I found that supports TPM version v2.0](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/enable-nitrotpm-prerequisites.html) are C5 instances.
