@@ -18,4 +18,4 @@ When the system boots, proceed normally to complete the installation choosing "S
 
 Update the system. When done, shut it down and export the VM to a single **.ova** or **.vhd** file.
 
-Follow Step2 now.
+Follow Step2[https://github.com/jdmedeiros/11onEC2/blob/main/Step2.md] now.
