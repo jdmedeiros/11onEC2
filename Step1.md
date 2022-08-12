@@ -1,4 +1,4 @@
-Go here https://www.microsoft.com/software-download/windows11 and in the section Download Windows 11 Disk Image (ISO) select the Windows 11 multi edition ISO 64-bit edition. You should end up with the Win11_English_x64v1.iso file.
+Go [here](https://www.microsoft.com/software-download/windows11) and in the section Download Windows 11 Disk Image (ISO) select the Windows 11 multi edition ISO 64-bit edition. You should end up with the _Win11_English_x64v1.iso_ file.
 
 
 Create a new virtual machine with VMware Workstation/Fusion or Virtualbox; I am using Fusion. For boot firmware make sure you specify **UEFI**. Adjust memory and disk size to your preferences; I would recommend 4/64. For disk type specify SATA (I have not tested NVMe, SCSI or IDE). Also, I keep it to one file.
